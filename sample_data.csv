@@ -1,0 +1,11 @@
+id,message,expected_category,expected_risk
+1,"Your bank account is blocked. Share your OTP immediately.",Banking / OTP fraud,HIGH
+2,"Your UPI refund is pending. Scan QR and enter UPI PIN to receive money.",UPI / payment fraud,HIGH
+3,"Work from home. Earn 50000 monthly. Pay 999 registration fee today.",Fake job offer,HIGH
+4,"Invest now and get guaranteed profit with double your money.",Investment scam,CAUTION
+5,"Congratulations! You won a lottery prize. Pay processing fee to claim.",Prize / lottery scam,HIGH
+6,"Click here to update your KYC and verify your account.",Banking / OTP fraud,CAUTION
+7,"Your college meeting is scheduled tomorrow at 10 AM.",No category confidently identified,UNCERTAIN
+8,"Install AnyDesk and share your screen for bank verification.",No category confidently identified,CAUTION
+9,"Your account needs immediate verification. Visit http://example.com",Banking / OTP fraud,CAUTION
+10,"Your appointment is confirmed for tomorrow.",No category confidently identified,UNCERTAIN
