@@ -1,6 +1,9 @@
 import pytest
+from pathlib import Path
 from streamlit.testing.v1 import AppTest
 
+# Locate app.py in the main repository folder
+APP_PATH = Path(__file__).resolve().parents[1] / "app.py"
 
 TEST_CASES = [
     (
@@ -29,11 +32,10 @@ TEST_CASES = [
     ),
 ]
 
-
 @pytest.mark.parametrize("message, expected_category", TEST_CASES)
 def test_scam_category_classification(message, expected_category):
 
-    app = AppTest.from_file("app.py")
+    app = AppTest.from_file(str(APP_PATH))
     app.run()
 
     app.text_area[0].set_value(message)
