@@ -27,3 +27,10 @@ jobs:
       - name: Run automated tests
         run: |
           pytest -v
+                - name: Run automated tests
+        run: |
+          pytest -v
+
+      - name: Run accuracy evaluation
+        run: |
+          python evaluate.py
